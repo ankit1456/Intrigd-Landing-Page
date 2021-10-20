@@ -1,0 +1,75 @@
+@import "../../sass/_base.scss";
+
+.header-white {
+  background-color: #fff;
+  z-index: 999;
+}
+
+.header {
+  font-size: 1.4rem;
+  font-weight: 500;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+  &__logo {
+    img {
+      width: 100%;
+      height: 10rem;
+      object-fit: contain;
+    }
+  }
+
+  &__menu {
+    list-style: none;
+
+    li:not(:last-child) {
+      margin-right: 3.3rem;
+    }
+
+    a {
+      color: $text-color;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media (max-width: 704px) {
+  .header {
+    &__menu {
+      li:not(:last-child) {
+        margin-right: 2rem;
+      }
+    }
+  }
+}
+@media (max-width: 608px) {
+  .header {
+    img {
+      height: 7rem;
+      object-fit: contain;
+    }
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 608px) {
+  .header {
+    &__menu {
+      li:not(:last-child) {
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    &__menu {
+      li:not(:last-child) {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}

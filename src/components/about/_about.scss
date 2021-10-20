@@ -1,0 +1,144 @@
+@import "../../sass/_base.scss";
+
+.aboutWrapper {
+  background-color: #f6f6f6;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 12rem 0;
+  font-family: "Raleway", sans-serif;
+  width: 80%;
+  margin: 0 auto;
+
+  &__left {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+
+    img {
+      height: 40rem;
+      width: 100%;
+      object-fit: contain;
+      vertical-align: middle;
+    }
+  }
+
+  &__right {
+    flex: 0 0 50%;
+    max-width: 45%;
+    h2 {
+      font-weight: 800;
+      text-transform: uppercase;
+      margin-bottom: 2.5rem;
+      font-size: 3.4rem;
+      line-height: 3.8rem;
+    }
+
+    p {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+      color: $text-color;
+    }
+
+    li {
+      font-size: 1.6rem;
+      margin-bottom: 1.2rem;
+
+      svg {
+        margin-bottom: -0.4rem;
+        margin-right: 1rem;
+      }
+    }
+    img {
+      height: 40rem;
+      width: 100%;
+      object-fit: contain;
+      vertical-align: middle;
+    }
+  }
+
+  &__btn {
+    font-size: 1.6rem;
+    border: 1px solid #29b9f2;
+    padding: 1.6rem 3.3rem;
+    text-transform: capitalize;
+    font-weight: 600;
+    background: #29b9f2;
+    color: #fff;
+    border-radius: 3rem;
+    margin-right: 0.8rem;
+    margin-top: 3rem;
+    transition: all 0.3s ease-in-out 0s;
+
+    &:hover {
+      background-color: #fff;
+      color: #29b9f2;
+      border: 1px solid #29b9f2;
+    }
+  }
+}
+
+@media (max-width: 1090px) {
+  .about {
+    width: 90%;
+    padding: 11rem 0;
+    margin: 0 auto;
+
+    &__btn {
+      margin-top: 2rem;
+    }
+  }
+}
+@media (max-width: 808px) {
+  .about {
+    width: 100%;
+    padding: 10rem 0;
+    margin: 0 auto;
+
+    h2 {
+      font-size: 3rem;
+    }
+
+    &__btn {
+      margin-top: 1rem;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .about {
+    display: flex;
+    flex-wrap: wrap;
+
+    &__left {
+      width: 100%;
+    }
+    &__right {
+      width: 90%;
+      img {
+        width: 100%;
+        min-height: 50rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .about {
+    padding: 0;
+    width: 100%;
+
+    &__right {
+      img {
+        width: 100%;
+      }
+    }
+
+    &__btn {
+      margin-bottom: 2rem;
+    }
+  }
+}

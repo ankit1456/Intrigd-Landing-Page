@@ -1,0 +1,42 @@
+@import "../../sass/_base.scss";
+
+.featureWrapper {
+  background-color: #29b9f2;
+  width: 100%;
+}
+
+.feature {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
+  width: 75%;
+  margin: 0 auto;
+  h2 {
+    font-size: 3.4rem;
+    margin-top: -0.4rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 7rem;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__boxes {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1090px) {
+  .feature {
+    width: 85%;
+  }
+}
+
+@media (max-width: 742px) {
+  .feature {
+    &__boxes {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
